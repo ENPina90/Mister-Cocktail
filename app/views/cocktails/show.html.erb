@@ -1,7 +1,11 @@
 <div class="container">
   <div class="row">
     <div class="col-xs-12 col-sm-10 col-sm-offset-1">
-      <h1><%= @cocktail.name %></h1>
+      <% @cocktail.photos.each do |photo| %>
+        <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('<%= cl_image_path photo.key, height: 300, width: 400, crop: :fill %>')">
+          <h1><%= @cocktail.name %></h1>
+         <% end %>
+        </div>
 
        <div class="list-group">
         <% @cocktail.doses.each do |dose| %>
