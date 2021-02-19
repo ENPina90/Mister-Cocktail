@@ -22,7 +22,7 @@ puts 'Finished!'
   file = URI.open(photo)
   drink = Faker::Hipster.words
   cocktail = Cocktail.new(name: drink[1])
-  cocktail.photos.attach(io: file, filename: "#{drink}.png", content_type: 'image/png')
+  cocktail.photo.attach(io: file, filename: "#{drink}.png", content_type: 'image/png')
   new_saved = cocktail.save!
   # puts "Created #{new_saved}"
 end
