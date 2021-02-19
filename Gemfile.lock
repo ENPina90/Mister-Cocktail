@@ -66,6 +66,10 @@ GEM
     concurrent-ruby (1.1.8)
     crass (1.0.6)
     diff-lcs (1.4.4)
+    dotenv (2.7.6)
+    dotenv-rails (2.7.6)
+      dotenv (= 2.7.6)
+      railties (>= 3.2)
     erubi (1.10.0)
     execjs (2.7.0)
     ffi (1.14.2)
@@ -77,6 +81,7 @@ GEM
       concurrent-ruby (~> 1.0)
     jbuilder (2.11.2)
       activesupport (>= 5.0.0)
+    json (2.5.1)
     listen (3.4.1)
       rb-fsevent (~> 0.10, >= 0.10.3)
       rb-inotify (~> 0.9, >= 0.9.10)
@@ -95,6 +100,7 @@ GEM
     nio4r (2.5.5)
     nokogiri (1.11.1-x86_64-darwin)
       racc (~> 1.4)
+    open-uri (0.1.0)
     pg (1.2.3)
     puma (4.3.7)
       nio4r (~> 2.0)
@@ -208,9 +214,12 @@ DEPENDENCIES
   autoprefixer-rails
   bootsnap (>= 1.4.2)
   byebug
+  dotenv-rails
   font-awesome-sass (~> 5.12.0)
   jbuilder (~> 2.7)
+  json
   listen (~> 3.2)
+  open-uri
   pg (>= 0.18, < 2.0)
   puma (~> 4.1)
   rails (~> 6.0.3, >= 6.0.3.5)
